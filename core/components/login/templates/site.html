@@ -1,4 +1,4 @@
-<ion-view view-title="{{ 'mm.login.connecttomoodle' | translate }}">
+<ion-view view-title="Connect to BSP e-Learning">
   <ion-nav-buttons side="secondary">
       <button class="button button-icon ion-help-circled" ng-click="showHelp()" aria-label="{{ 'mm.core.help' | translate }}"></button>
   </ion-nav-buttons>
@@ -11,7 +11,7 @@
 
         <!-- Form to input the site URL if there are no fixed sites. -->
         <div ng-if="!fixedSites">
-          <p class="padding">{{ 'mm.login.newsitedescription' | translate }}</p>
+          <p class="padding">Please click connect to start.</p>
           <div class="list item item-input">
             <input type="url" placeholder="{{ 'mm.login.siteaddress' | translate }}" ng-model="loginData.siteurl" mm-no-input-validation mm-auto-focus disabled >
           </div>
